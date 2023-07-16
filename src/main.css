@@ -1,0 +1,163 @@
+:root {
+  --body-bg: rgb(246, 246, 246);
+  --text-color: black;
+  --loader-color: white;
+}
+
+.dark {
+  --body-bg: #19232a;
+  --text-color: white;
+  --loader-color: #24323d;
+}
+
+body {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+}
+
+.wrap {
+  display: grid;
+  gap: 70px;
+  grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+}
+.img_wrap {
+  height: 160px;
+  overflow: hidden;
+}
+.dropbtn {
+  color: var(--text-color);
+  background-color: var(--loader-color);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px rgba(50, 49, 49, 0.2);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background-color: var(--loader-color);
+  color: var(--text-color);
+  border-radius: 5px;
+}
+
+.item {
+  background-color: var(--body-bg);
+  color: var(--text-color);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--loader-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dark-mode {
+  background: var(--loader-color);
+  color: var(--text-color);
+}
+
+.dropdown-content a {
+  color: var(--text-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.drown {
+  margin-top: -14px;
+  margin-left: -1px;
+  width: 321px;
+  background: var(--loader-color);
+  color: var(--text-color);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Head_wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.country_Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(--bg-color);
+  display: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.back {
+  position: absolute;
+  top: 3rem;
+  left: 30px;
+  background: white;
+  box-shadow: 0px 8px 16px 0px rgba(50, 49, 49, 0.2);
+  padding: 10px 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.leftModal {
+  width: 50%;
+}
+.leftModal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rightModal {
+  width: 50%;
+  margin-left: 40px;
+}
+
+.Modal_info {
+  display: flex;
+  justify-content: space-between;
+}
+.rightModal h1 {
+  margin: 10px 0;
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+
+.inner p {
+  letter-spacing: 1px;
+}
+
+.inner p > strong {
+  font-weight: 600;
+}
+
+.show {
+  display: none;
+}

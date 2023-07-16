@@ -1,0 +1,51 @@
+input[type="text"] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #f7f5f5;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: var(--loader-color);
+  background-image: url("lupa.svg");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 22px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type="text"]:focus {
+  width: 100%;
+}
+
+.shadown {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background: var(--bg-color);
+  border-radius: 5px;
+}
+.shadown:hover {
+  background-color: var(--loader-color);
+}
+.drow {
+  margin-top: 30px;
+  padding: 15px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  padding: 20px;
+}
+
+.pagination a {
+  color: var(--text-color);
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #0af11d;
+}
